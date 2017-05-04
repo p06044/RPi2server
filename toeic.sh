@@ -10,5 +10,5 @@ html=`date +"%Y%m%d"`.html
 wget -O /home/pi/${html} "https://www.iibc-global.org/toeic/test/lr/about/pr.html?utm_source=iibc&utm_medium=mail&utm_campaign=iibc_mail_exercise_over23
 "
 sleep 2s
+cp /home/pi/${html} /home/pi/share
 mv /home/pi/${html} /var/www
-
