@@ -13,7 +13,8 @@
 0 1 * * 2 /home/pi/rec_radiko.sh TBS 120 share JUNK伊集院光・深夜の馬鹿力
 0 1 * * 3 /home/pi/rec_radiko.sh TBS 120 share JUNK爆笑問題カーボーイ
 0 1 * * 4 /home/pi/rec_radiko.sh TBS 120 share JUNK山里亮太の不毛な議論
-0 1 * * 5 /home/pi/rec_radiko.sh TBS 120 share JUNKおぎやはぎのメガネびいき
+0 22 * * 4 /home/pi/rec_radiko.sh QRR 180 share  関ジャニ∞村上信五ジャニーズWEST桐山照史中間淳太のレコメン！
+#0 1 * * 5 /home/pi/rec_radiko.sh TBS 120 share JUNKおぎやはぎのメガネびいき
 0 1 * * 5 /home/pi/rec_radiko.sh LFR 120 share 星野源のオールナイトニッポン
 0 1 * * 6 /home/pi/rec_radiko.sh TBS 120 share JUNKバナナマンのバナナムーンGOLD
 30 2 * * 6 /home/pi/rec_radiko.sh QRR 30 share 安元洋貴ミクチャラジオ
