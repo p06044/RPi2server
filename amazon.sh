@@ -7,7 +7,7 @@ echo "<html>
 </head>
 <body>
     <SCRIPT LANGUAGE=\"JavaScript\">
-        setTimeout(\"location.reload()\",1000*3600);
+        setTimeout(\"location.reload()\",1000*60);
     </SCRIPT>" >> /home/pi/amazonlist.html
 
 echo `date` >> /home/pi/amazonlist.html
