@@ -11,7 +11,7 @@ echo "<html>
     </SCRIPT>" >> /home/pi/cron.html
 
 echo `date` >> /home/pi/cron.html
-#crontab -l >> cron.html
+
 crontab -l | while read line
 do
         echo "<div>${line}</div>" >> /home/pi/cron.html
