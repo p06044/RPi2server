@@ -12,6 +12,13 @@ echo "<html>
 
 echo `date` >> /home/pi/cron.html
 echo "<div><img src=\"weight.png\" width=\"50%\"></div>" >> /home/pi/cron.html
+
+ls -tl share | tail -n +2 | awk '{print $6,$7,$8,$9}' | while read line
+do
+        echo "<div>${line}</div>" >> /home/pi/cron.html
+
+done
+
 crontab -l | while read line
 do
         echo "<div>${line}</div>" >> /home/pi/cron.html
