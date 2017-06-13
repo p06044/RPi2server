@@ -4,7 +4,7 @@
 0 * * * * bash $HOME/cronhtml.sh >/dev/null 2>&1
 0 8 * * * python $HOME/weight.py >/dev/null 2>&1
 #RADIO
-0 13 * * 1-4 $HOME/rec_radiko.sh NACK5 235 share GOGOMONZ
+#0 13 * * 1-4 $HOME/rec_radiko.sh NACK5 235 share GOGOMONZ
 30 8 * * 1-4 $HOME/rec_radiko.sh TBS 150 share 伊集院光とらじおと
 0 1 * * 2-6 $HOME/rec_radiko.sh TBS 120 share JUNK
 0 13 * * 1-5 $HOME/rec_radiko.sh TBS 150 share たまむすび
