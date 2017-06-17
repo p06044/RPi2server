@@ -12,4 +12,5 @@
 0 13 * * 0 $HOME/rec_radiko.sh TBS 240 share 爆笑問題の日曜サンデ
 50 21 * * 0 $HOME/rec_radiko.sh LFR 10 share サンドウィッチマンの東北魂
 0 1 * * 2 $HOME/rec_radiko.sh QRR 60 share 関智一ユニゾン
+0 14 * * 6 $HOME/rec_radiko.sh FMT 55 share 福山雅治福のラジオ
 0 9 * * 6 $HOME/rec_radiko.sh TBS 240 share ナイツちゃきちゃ
