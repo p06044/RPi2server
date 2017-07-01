@@ -12,7 +12,7 @@ echo "<html>
 
 #日付パート
 echo `date` >> /home/pi/cron.html
-
+echo "<a href=\"http://p06044.server-on.net/amazonlist.html\">[ama]</a><a href=\"http://p06044.server-on.net/ya.html\">[yauc]</a><a href=\"http://p06044.server-on.net/auctionlist.html\">[auc]</a>" >> /home/pi/ya.html
 #SAMBAパート
 ls -tl share | tail -n +2 | awk '{print $6,$7,$8,$9}' | while read line
 do
@@ -32,3 +32,4 @@ echo "</body>
 </html>" >> /home/pi/cron.html
 
 mv cron.html /var/www/html
+

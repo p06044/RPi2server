@@ -11,7 +11,7 @@ echo "<html>
     </SCRIPT>" >> /home/pi/auctionlist.html
 
 echo `date` >> /home/pi/auctionlist.html
-echo "<a href=\"http://p06044.server-on.net/amazonlist.html\">ama</a><a href=\"http://p06044.server-on.net/cron.html\">cron</a>" >> /home/pi/auctionlist.html
+echo "<a href=\"http://p06044.server-on.net/amazonlist.html\">[ama]</a><a href=\"http://p06044.server-on.net/cron.html\">[cron]</a><a href=\"http://p06044.server-on.net/ya.html\">[yauc]</a>" >> /home/pi/auctionlist.html
 RET='\
 '
 wget -O auclist.html "https://www.mercari.com/jp/search/?sort_order=&keyword=%E8%A6%81%E9%A0%85%E9%9B%86&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&status_on_sale=1" &
