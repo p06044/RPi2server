@@ -11,17 +11,13 @@ echo "<html>
     </SCRIPT>" >> /home/pi/amazonlist.html
 
 echo `date` >> /home/pi/amazonlist.html
+echo "<a href=\"http://p06044.server-on.net/ya.html\">[yauc]</a><a href=\"http://p06044.server-on.net/cron.html\">[cron]</a><a href=\"http://p06044.server-on.net/auctionlist.html\">[auc]</a>" >> /home/pi/amazonlist.html
 RET='\
 '
 for j in `cat wlist.html | grep pag-trigger | sed -e "s/^.*quot;:\(.*\)\}\".*$/\1/"`
 do
-    wget -O wlisttemp "https://www.amazon.co.jp/gp/registry/wishlist/AIL114CMM7OU/ref=cm_wl_sortbar_o_page_${j}?ie=UTF8&page=${j}"
-    sleep 2s
-    if [ ! -s wlisttemp ]; then
-        rm wlisttemp
-    else
-        mv wlisttemp wlist.html
-    fi
+    wget -O wlist.html "https://www.amazon.co.jp/gp/registry/wishlist/AIL114CMM7OU/ref=cm_wl_sortbar_o_page_${j}?ie=UTF8&page=${j}" &
+    wait $!
     NAMES=($(cat wlist.html | grep -A 1 -e "a id=\"itemName" | grep -v "a id=\"itemName" | sed -e "s/--//g" -e "s/ //g" | grep -v '^\s*$'))
     PRICES=($(cat wlist.html | grep "￥" | grep "より" | sed -e "s/<span class=\"a-color-price itemUsedAndNewPrice\">//g" -e "s/<\/span>より//g" -e "s/￥ //g" -e "s/ //g" -e "s/,//g"))
     LINK=($(cat wlist.html | grep "a id=\"itemName" | sed -e "s/<a id=\"itemName.*href=\"\/dp\/\(.*\)?_encoding.*$/\1/" -e "s/ //g"))
