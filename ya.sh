@@ -14,7 +14,7 @@ echo "<html>
 echo `date` >> /home/pi/ya.html
 
 #ページリンクパート
-echo "<a href=\"http://p06044.server-on.net/amazonlist.html\">[ama]</a><a href=\"http://p06044.server-on.net/cron.html\">[cron]</a><a href=\"http://p06044.server-on.net/auctionlist.html\">[auc]</a>" >> /home/pi/ya.html
+echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[auc]</a>[yauc]" >> /home/pi/ya.html
 RET='\
 '
 
