@@ -14,7 +14,7 @@ echo "<html>
 echo `date` >> /home/pi/cron.html
 
 #ページリンクパート
-echo "<a href=\"amazonlist.html\">[ama]</a>[cron]<a href=\"auctionlist.html\">[auc]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/cron.html
+echo "<a href=\"amazonlist.html\">[ama]</a><span style="color:blue;">[cron]</span><a href=\"auctionlist.html\">[auc]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/cron.html
 #SAMBAパート
 ls -tl share | tail -n +2 | awk '{print $6,$7,$8,$9}' | while read line
 do

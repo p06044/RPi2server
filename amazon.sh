@@ -14,7 +14,7 @@ echo "<html>
 echo `date` >> /home/pi/amazonlist.html
 
 #ページリンクパート
-echo "[ama]<a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[auc]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/amazonlist.html
+echo "<span style="color:blue;">[ama]</span><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[auc]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/amazonlist.html
 RET='\
 '
 
