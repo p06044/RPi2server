@@ -4,25 +4,14 @@
 0 * * * * bash $HOME/cronhtml.sh >/dev/null 2>&1
 0 8 * * * python $HOME/weight.py >/dev/null 2>&1
 #RADIO
-<<<<<<< HEAD
 0 13 * * 1-4 $HOME/rec_radiko.sh NACK5 235 share GOGOMONZ
 0 1 * * 2-6 $HOME/rec_radiko.sh TBS 120 share JUNK
 0 13 * * 1-5 $HOME/rec_radiko.sh TBS 150 share たまむすび
 0 1 * * 0,3 $HOME/rec_radiko.sh LFR 120 share オールナイトニッポン
 30 1 * * 0 $HOME/rec_radiko.sh QRR 30 share 宮野真守のRADIOSMILE
 #30 2 * * 0 $HOME/rec_radiko.sh QRR 30 share 安元洋貴ミクチャラジオ
-=======
-30 8 * * 1-4 $HOME/rec_radiko.sh TBS 150 share 伊集院光とらじおと
-0 1 * * 2-6 $HOME/rec_radiko.sh TBS 120 share JUNK
-0 13 * * 1-5 $HOME/rec_radiko.sh TBS 150 share たまむすび
-0 1 * * 0,3 $HOME/rec_radiko.sh LFR 120 share オールナイトニッポン
->>>>>>> origin/master
 0 10 * * 0 $HOME/rec_radiko.sh TBS 115 share 安住紳一郎の日曜天国
 0 13 * * 0 $HOME/rec_radiko.sh TBS 240 share 爆笑問題の日曜サンデ
 50 21 * * 0 $HOME/rec_radiko.sh LFR 10 share サンドウィッチマンの東北魂
 0 1 * * 2 $HOME/rec_radiko.sh QRR 60 share 関智一ユニゾン
-<<<<<<< HEAD
-=======
-0 14 * * 6 $HOME/rec_radiko.sh FMT 55 share 福山雅治福のラジオ
->>>>>>> origin/master
 0 9 * * 6 $HOME/rec_radiko.sh TBS 240 share ナイツちゃきちゃ
