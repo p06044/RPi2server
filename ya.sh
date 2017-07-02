@@ -18,7 +18,7 @@ echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><a hr
 RET='\
 '
 #ヤフオクリンク
-echo "<a href=\"https:\/\/auctions.yahoo.co.jp\/rss?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86&oq=&auccat=0&fixed=0&ei=UTF8\">ヤフオク</a>" >> /home/pi/ya.html
+echo "<a href=\"https://auctions.yahoo.co.jp/search/search?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86&auccat=0&fixed=0\" target=\"_blank\">ヤフオク</a>" >> /home/pi/ya.html
 
 #ヤフオクパート
 wget -O yalist.html "https://auctions.yahoo.co.jp/rss?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86&oq=&auccat=0&fixed=0&ei=UTF8" &
