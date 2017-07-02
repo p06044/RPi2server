@@ -12,6 +12,7 @@ echo "<html>
 
 #日付パート
 echo `date` >> /home/pi/cron.html
+
 #ページリンクパート
 echo "<a href=\"http://p06044.server-on.net/amazonlist.html\">[ama]</a><a href=\"http://p06044.server-on.net/ya.html\">[yauc]</a><a href=\"http://p06044.server-on.net/auctionlist.html\">[auc]</a>" >> /home/pi/cron.html
 #SAMBAパート

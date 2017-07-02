@@ -10,10 +10,15 @@ echo "<html>
         setTimeout(\"location.reload()\",1000*60);
     </SCRIPT>" >> /home/pi/ya.html
 
+#日付パート
 echo `date` >> /home/pi/ya.html
+
+#ページリンクパート
 echo "<a href=\"http://p06044.server-on.net/amazonlist.html\">[ama]</a><a href=\"http://p06044.server-on.net/cron.html\">[cron]</a><a href=\"http://p06044.server-on.net/auctionlist.html\">[auc]</a>" >> /home/pi/ya.html
 RET='\
 '
+
+#ヤフオクパート
 wget -O yalist.html "https://auctions.yahoo.co.jp/rss?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86&oq=&auccat=0&fixed=0&ei=UTF8" &
 wait $!
 NAMES=($(cat yalist.html| sed -e "/ヤフオク/d" | grep -A1 title | grep title | sed -e "s/^.*<title>\(.*\)<\/title>.*$/\1/" -e "s/ //g" -e "s/　//g"))
