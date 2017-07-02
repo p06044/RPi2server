@@ -10,7 +10,6 @@ echo "<html>
         setTimeout(\"location.reload()\",1000*60);
     </SCRIPT>" >> /home/pi/cron.html
 
-<<<<<<< HEAD
 #日付パート
 echo `date` >> /home/pi/cron.html
 #ページリンクパート
@@ -25,10 +24,6 @@ done
 echo "<div><img src=\"weight.png\" width=\"30%\"></div>" >> /home/pi/cron.html
 
 #CRONパート
-=======
-echo `date` >> /home/pi/cron.html
-
->>>>>>> origin/master
 crontab -l | while read line
 do
         echo "<div>${line}</div>" >> /home/pi/cron.html
