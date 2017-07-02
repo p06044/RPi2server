@@ -14,9 +14,11 @@ echo "<html>
 echo `date` >> /home/pi/ya.html
 
 #ページリンクパート
-echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[auc]</a><span style=\"color:orange;\">[yauc]</span>" >> /home/pi/ya.html
+echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[meru]</a><span style=\"color:orange;\">[yauc]</span>" >> /home/pi/ya.html
 RET='\
 '
+#ヤフオクリンク
+echo "<a href=\"https:\/\/auctions.yahoo.co.jp\/rss?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86&oq=&auccat=0&fixed=0&ei=UTF8\">ヤフオク</a>" >> /home/pi/ya.html
 
 #ヤフオクパート
 wget -O yalist.html "https://auctions.yahoo.co.jp/rss?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86&oq=&auccat=0&fixed=0&ei=UTF8" &

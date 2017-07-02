@@ -14,9 +14,11 @@ echo "<html>
 echo `date` >> /home/pi/amazonlist.html
 
 #ページリンクパート
-echo "<span style=\"color:orange;\">[ama]</span><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[auc]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/amazonlist.html
+echo "<span style=\"color:orange;\">[ama]</span><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[meru]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/amazonlist.html
 RET='\
 '
+#アマゾンほしいものリンク
+echo "<a href=\"https://www.amazon.co.jp/gp/registry/wishlist/AIL114CMM7OU/ref=nav_wishlist_lists_4\">ほしい物リスト</a>" >> /home/pi/amazonlist.html
 
 #アマゾンパート
 for j in `cat wlist.html | grep pag-trigger | sed -e "s/^.*quot;:\(.*\)\}\".*$/\1/"`
