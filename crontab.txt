@@ -1,7 +1,7 @@
 3 * * * * /usr/bin/fetchmail -f $HOME/.fetchmailrc >/dev/null 2>&1
 0 17 * * 2 $HOME/toeic.sh >/dev/null 2>&1
 0 * * * * bash $HOME/amazon.sh >/dev/null 2>&1
-0 * * * * bash $HOME/auctionlist.sh >/dev/null 2>&1
+0 * * * * bash $HOME/auction.sh >/dev/null 2>&1
 0 * * * * bash $HOME/ya.sh >/dev/null 2>&1
 0 * * * * bash $HOME/cronhtml.sh >/dev/null 2>&1
 0 8 * * * python $HOME/weight.py >/dev/null 2>&1
