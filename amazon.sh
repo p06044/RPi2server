@@ -46,7 +46,17 @@ do
     done
 done
 
-echo "</body>
+#アフィパート
+echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
+<!-- ふゎーおすまほ -->
+<ins class=\"adsbygoogle\"
+     style=\"display:inline-block;width:300px;height:250px\"
+     data-ad-client=\"ca-pub-8948717586645505\"
+     data-ad-slot=\"2135626673\"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
 </html>" >> /home/pi/amazonlist.html
 
 mv /home/pi/amazonlist.html /var/www/html

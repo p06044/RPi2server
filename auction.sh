@@ -14,7 +14,7 @@ echo "<html>
 echo `date` >> /home/pi/auctionlist.html
 
 #ページリンクパート
-echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><span style=\"color:orange;\">[auc]</span><a href=\"ya.html\">[yauc]</a>" >> /home/pi/auctionlist.html
+echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><span style=\"color:orange;\">[meru]</span><a href=\"ya.html\">[yauc]</a>" >> /home/pi/auctionlist.html
 RET='\
 '
 
@@ -32,7 +32,17 @@ do
 	i=`expr $i + 1`
 done
 
-echo "</body>
+#アフィパート
+echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
+<!-- ふゎーおすまほ -->
+<ins class=\"adsbygoogle\"
+     style=\"display:inline-block;width:300px;height:250px\"
+     data-ad-client=\"ca-pub-8948717586645505\"
+     data-ad-slot=\"2135626673\"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
 </html>" >> /home/pi/auctionlist.html
 
 mv /home/pi/auctionlist.html /var/www/html
