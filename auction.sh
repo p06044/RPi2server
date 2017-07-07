@@ -3,7 +3,7 @@ echo "<html>
 <head>
     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" >
     <meta charset=\"UTF-8\" >
-    <title>auction list</title>
+    <title>merukari list</title>
 </head>
 <body>
     <SCRIPT LANGUAGE=\"JavaScript\">
