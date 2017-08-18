@@ -1,5 +1,5 @@
 3 * * * * /usr/bin/fetchmail -f $HOME/.fetchmailrc >/dev/null 2>&1
-0 17 * * 2 $HOME/toeic.sh >/dev/null 2>&1
+0 17 * * 2 bash $HOME/toeic.sh >/dev/null 2>&1
 0 * * * * bash $HOME/amazon.sh >/dev/null 2>&1
 0 * * * * bash $HOME/auction.sh >/dev/null 2>&1
 0 * * * * bash $HOME/ya.sh >/dev/null 2>&1
