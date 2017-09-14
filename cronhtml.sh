@@ -13,9 +13,6 @@ echo "<html>
 #日付パート
 echo `date` >> /home/pi/cron.html
 
-#センターカウントダウン
-bash /home/pi/timediff.sh
-
 #ページリンクパート
 echo "<a href=\"amazonlist.html\">[ama]</a><span style=\"color:orange;\">[cron]</span><a href=\"auctionlist.html\">[meru]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/cron.html
 #SAMBAパート
@@ -23,6 +20,9 @@ ls -tl share | tail -n +2 | awk '{print $6,$7,$8,$9}' | while read line
 do
 	echo "<div>${line}</div>" >> /home/pi/cron.html
 done
+
+#センターカウントダウン
+bash /home/pi/timediff.sh
 
 #体重パート
 echo "<div><img src=\"weight.png\" width=\"30%\"></div>" >> /home/pi/cron.html
