@@ -13,6 +13,9 @@ echo "<html>
 #日付パート
 echo `date` >> /home/pi/cron.html
 
+#センターカウントダウン
+bash /home/pi/timediff.sh
+
 #ページリンクパート
 echo "<a href=\"amazonlist.html\">[ama]</a><span style=\"color:orange;\">[cron]</span><a href=\"auctionlist.html\">[meru]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/cron.html
 #SAMBAパート
