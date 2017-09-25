@@ -17,6 +17,20 @@ echo `date` >> /home/pi/ya.html
 echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[meru]</a><span style=\"color:orange;\">[yauc]</span>" >> /home/pi/ya.html
 RET='\
 '
+
+#アフィパート
+echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
+<!-- ふゎーおすまほ -->
+<ins class=\"adsbygoogle\"
+     style=\"display:inline-block;width:300px;height:250px\"
+     data-ad-client=\"ca-pub-8948717586645505\"
+     data-ad-slot=\"2135626673\"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>" >> /home/pi/ya.html
+
 #ヤフオクリンク
 echo "<a href=\"https://auctions.yahoo.co.jp/search/search?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86&auccat=0&fixed=0\" target=\"_blank\">ヤフオク</a>" >> /home/pi/ya.html
 
@@ -33,18 +47,5 @@ do
 	echo "<div><span style=\"color:black;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/ya.html
 	i=`expr $i + 1`
 done
-
-#アフィパート
-echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
-<!-- ふゎーおすまほ -->
-<ins class=\"adsbygoogle\"
-     style=\"display:inline-block;width:300px;height:250px\"
-     data-ad-client=\"ca-pub-8948717586645505\"
-     data-ad-slot=\"2135626673\"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</body>
-</html>" >> /home/pi/ya.html
 
 mv /home/pi/ya.html /var/www/html

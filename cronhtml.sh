@@ -16,6 +16,19 @@ echo `date` >> /home/pi/cron.html
 #ページリンクパート
 echo "<a href=\"amazonlist.html\">[ama]</a><span style=\"color:orange;\">[cron]</span><a href=\"auctionlist.html\">[meru]</a><a href=\"ya.html\">[yauc]</a>" >> /home/pi/cron.html
 
+#アフィパート
+echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
+<!-- ふゎーおすまほ -->
+<ins class=\"adsbygoogle\"
+     style=\"display:inline-block;width:300px;height:250px\"
+     data-ad-client=\"ca-pub-8948717586645505\"
+     data-ad-slot=\"2135626673\"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>" >> /home/pi/cron.html
+
 #センターカウントダウン
 bash /home/pi/timediff.sh
 
@@ -33,19 +46,6 @@ crontab -l | while read line
 do
         echo "<div>${line}</div>" >> /home/pi/cron.html
 done
-
-#アフィパート
-echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
-<!-- ふゎーおすまほ -->
-<ins class=\"adsbygoogle\"
-     style=\"display:inline-block;width:300px;height:250px\"
-     data-ad-client=\"ca-pub-8948717586645505\"
-     data-ad-slot=\"2135626673\"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</body>
-</html>" >> /home/pi/cron.html
 
 mv cron.html /var/www/html
 

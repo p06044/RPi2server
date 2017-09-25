@@ -18,6 +18,19 @@ echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><span
 RET='\
 '
 
+#アフィパート
+echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
+<!-- ふゎーおすまほ -->
+<ins class=\"adsbygoogle\"
+     style=\"display:inline-block;width:300px;height:250px\"
+     data-ad-client=\"ca-pub-8948717586645505\"
+     data-ad-slot=\"2135626673\"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>" >> /home/pi/auctionlist.html
+
 #メルカリパート
 wget -O auclist.html "https://www.mercari.com/jp/search/?sort_order=&keyword=kals+%E8%A6%81%E9%A0%85%E9%9B%86&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&status_on_sale=1" &
 wait $!
@@ -31,18 +44,5 @@ do
 	echo "<div><span style=\"color:black;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/auctionlist.html
 	i=`expr $i + 1`
 done
-
-#アフィパート
-echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
-<!-- ふゎーおすまほ -->
-<ins class=\"adsbygoogle\"
-     style=\"display:inline-block;width:300px;height:250px\"
-     data-ad-client=\"ca-pub-8948717586645505\"
-     data-ad-slot=\"2135626673\"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</body>
-</html>" >> /home/pi/auctionlist.html
 
 mv /home/pi/auctionlist.html /var/www/html
