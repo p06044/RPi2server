@@ -11,6 +11,5 @@
 0 1 * * 0,3 bash $HOME/rec_radiko.sh LFR 120 share オールナイトニッポン
 0 4 * * 0 bash $HOME/rec_radiko.sh JORF 30 share 宮川賢のまつぼっくり王国
 0 10 * * 0 bash $HOME/rec_radiko.sh TBS 115 share 安住紳一郎の日曜天国
-0 13 * * 0 bash $HOME/rec_radiko.sh TBS 240 share 爆笑問題の日曜サンデ
 0 0 * * 5 bash $HOME/rec_radiko.sh TBS 60 share ハライチのターン！
 0 19 * * 6 bash $HOME/rec_radiko.sh TBS 120 share 宮川賢のデートの時間でそ？！
