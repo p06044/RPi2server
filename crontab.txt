@@ -7,6 +7,7 @@
 0 * * * * bash $HOME/mkwfig.sh >/dev/null 2>&1
 #RADIO
 0 1 * * 3-6 bash $HOME/rec_radiko.sh TBS 120 share JUNK
+50 17 * * 2-5 bash $HOME/rec_radiko.sh TBS 230 share THE_FROGMAN_SHOW
 0 13 * * 1,2,4,5 bash $HOME/rec_radiko.sh TBS 150 share たまむすび
 0 1 * * 0,3 bash $HOME/rec_radiko.sh LFR 120 share オールナイトニッポン
 0 4 * * 0 bash $HOME/rec_radiko.sh JORF 30 share 宮川賢のまつぼっくり王国
