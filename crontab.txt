@@ -12,7 +12,6 @@
 0 0 * * 1 bash $HOME/rec_radiko.sh TBS 30 share 林原めぐみのTokyoBoogieNight
 0 0 * * 2,4-6 bash $HOME/rec_radiko.sh TBS 60 share TBS0時
 0 1 * * 0,3 bash $HOME/rec_radiko.sh LFR 120 share オールナイトニッポン
-0 6 * * 0 bash $HOME/rec_radiko.sh TBS 10 share 笹川友里プレシャスサンデー
 0 12 * * 0 bash $HOME/rec_radiko.sh LFR 60 share 土田晃之日曜のへそ
 0 10 * * 0 bash $HOME/rec_radiko.sh TBS 115 share 安住紳一郎の日曜天国
 30 21 * * 1 bash $HOME/rec_radiko.sh TBS 30 share さかなクンのレッツギョ～
