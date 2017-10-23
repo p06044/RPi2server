@@ -14,6 +14,7 @@
 0 1 * * 0,3 bash $HOME/rec_radiko.sh LFR 120 share オールナイトニッポン
 0 12 * * 0 bash $HOME/rec_radiko.sh LFR 60 share 土田晃之日曜のへそ
 0 10 * * 0 bash $HOME/rec_radiko.sh TBS 115 share 安住紳一郎の日曜天国
+0 23 * * 0 bash $HOME/rec_radiko.sh LFR 30 share ワンダフルナイト
 30 21 * * 1 bash $HOME/rec_radiko.sh TBS 30 share さかなクンのレッツギョ～
 0 0 * * 5 bash $HOME/rec_radiko.sh LFR 53 share ミュ〜コミ＋プラス
 0 3 * * 6 bash $HOME/rec_radiko.sh LFR 90 share オールナイトニッポン0
