@@ -44,7 +44,11 @@ i=0
 j=`expr ${#NAMES[@]}`
 while [ $i -ne $j ]
 do
-	echo "<div><span style=\"color:black;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/ya.html
+	if [ `echo ${NAMES[$i]} | grep '2015'` ] ; then
+		echo "<div><span style=\"color:red;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/ya.html
+	else
+		echo "<div><span style=\"color:black;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/ya.html
+	fi
 	i=`expr $i + 1`
 done
 
