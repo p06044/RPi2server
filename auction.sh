@@ -41,10 +41,10 @@ i=0
 j=`expr ${#NAMES[@]}`
 while [ $i -ne $j ]
 do
-	if [ `echo ${NAMES[$i]} | grep '2015' | grep '三重' | grep -v '看護' ` ] ; then
+	if [ `echo ${NAMES[$i]} | grep '2015' | grep '三重' | grep -v '看護' | grep -v 'AO' ` ] ; then
 	
 		echo "<div><span style=\"color:red;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/auctionlist.html
-	elif [ `echo ${NAMES[$i]} | grep '三重' | grep -e '2014' -e '2013' -e '2016' -e '2017' ` ] ; then
+	elif [ `echo ${NAMES[$i]} | grep '三重' | grep -e '2014' -e '2013' -e '2016' -e '2017' | grep -v '看護'| grep -v 'AO' ` ] ; then
 		echo "<div><span style=\"color:orange;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/auctionlist.html
 	else
 		echo "<div><span style=\"color:black;\">${NAMES[$i]}</span><a href=\"${LINK[$i]}\" target=\"_blank\">${PRICES[$i]}</a></div>" >> /home/pi/auctionlist.html
