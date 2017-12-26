@@ -7,8 +7,8 @@ title=`echo "${content}" | sed -n '1p'`
 #一時的にhtmlに落とす
 html=`date +"%Y%m%d"`.html
 #wget -O /home/pi/${html} http://www.toeic.or.jp/toeic/pr.html?utm_source=iibc&utm_medium=mail&utm_term=&utm_content=&utm_campaign=iibc_mail_exercise_lp_2016
-wget -O /home/pi/${html} "https://www.iibc-global.org/toeic/test/lr/about/pr.html?utm_source=iibc&utm_medium=mail&utm_campaign=iibc_mail_exercise_over23
-"
-sleep 2s
+#wget -O /home/pi/${html} "https://www.iibc-global.org/toeic/test/lr/about/pr.html?utm_source=iibc&utm_medium=mail&utm_campaign=iibc_mail_exercise_over23
+wget -O /home/pi/${html} "https://www.iibc-global.org/toeic/test/lr/about/pr.html" &
+wait $!
 cp /home/pi/${html} /home/pi/share
 mv /home/pi/${html} /var/www
