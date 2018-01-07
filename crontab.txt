@@ -1,18 +1,18 @@
 3 * * * * /usr/bin/fetchmail -f $HOME/.fetchmailrc >/dev/null 2>&1
-0 17 * * 2 bash $HOME/toeic.sh >/dev/null 2>&1
-0 * * * * bash $HOME/amazon.sh >/dev/null 2>&1
-0 * * * * bash $HOME/auction.sh >/dev/null 2>&1
-0 * * * * bash $HOME/ya.sh >/dev/null 2>&1
-0 * * * * bash $HOME/cronhtml.sh >/dev/null 2>&1
-*/10 * * * * bash $HOME/mkwfig.sh >/dev/null 2>&1
+0 17 * * 2 bash $HOME/share/toeic.sh >/dev/null 2>&1
+0 * * * * bash $HOME/share/amazon.sh >/dev/null 2>&1
+0 * * * * bash $HOME/share/auction.sh >/dev/null 2>&1
+0 * * * * bash $HOME/share/ya.sh >/dev/null 2>&1
+0 * * * * bash $HOME/share/cronhtml.sh >/dev/null 2>&1
+*/10 * * * * bash $HOME/share/mkwfig.sh >/dev/null 2>&1
 #RADIO
-0 1 * * 3-5 bash $HOME/rec_radiko.sh TBS 120 share JUNK
-0 22 * * 1-5 bash $HOME/rec_radiko.sh TBS 115 share 荻上チキ
-0 13 * * 2,4 bash $HOME/rec_radiko.sh TBS 150 share たまむすび
-0 0 * * 1 bash $HOME/rec_radiko.sh TBS 30 share 林原めぐみ
-0 0 * * 2,5 bash $HOME/rec_radiko.sh TBS 60 share TBS0時
-0 1 * * 0,3 bash $HOME/rec_radiko.sh LFR 120 share オールナイトニッポン
-0 12 * * 0 bash $HOME/rec_radiko.sh LFR 60 share 土田晃之
-0 10 * * 0 bash $HOME/rec_radiko.sh TBS 115 share 安住
-0 19 * * 6 bash $HOME/rec_radiko.sh TBS 120 share 宮川賢
-0 13 * * 6 bash $HOME/rec_radiko.sh TBS 115 share 久米宏
+0 1 * * 3-5 bash $HOME/share/rec_radiko.sh TBS 120 share JUNK
+0 22 * * 1-5 bash $HOME/share/rec_radiko.sh TBS 115 share 荻上チキ
+0 13 * * 2,4 bash $HOME/share/rec_radiko.sh TBS 150 share たまむすび
+#0 0 * * 1 bash $HOME/share/rec_radiko.sh TBS 30 share 林原めぐみ
+0 0 * * 2,5 bash $HOME/share/rec_radiko.sh TBS 60 share TBS0時
+0 1 * * 0,3 bash $HOME/share/rec_radiko.sh LFR 120 share オールナイトニッポン
+#0 12 * * 0 bash $HOME/share/rec_radiko.sh LFR 60 share 土田晃之
+0 10 * * 0 bash $HOME/share/rec_radiko.sh TBS 115 share 安住
+0 19 * * 6 bash $HOME/share/rec_radiko.sh TBS 120 share 宮川賢
+0 13 * * 6 bash $HOME/share/rec_radiko.sh TBS 115 share 久米宏
