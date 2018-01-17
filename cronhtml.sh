@@ -30,7 +30,7 @@ echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.
 </html>" >> /home/pi/cron.html
 
 #センターカウントダウン
-bash /home/pi/timediff.sh
+bash /home/pi/git/timediff.sh
 
 #SAMBAパート
 ls -tl share | tail -n +2 | awk '{print $6,$7,$8,$9}' | while read line
