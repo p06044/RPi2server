@@ -10,11 +10,11 @@ echo "<html>
         setTimeout(\"location.reload()\",1000*60);
     </SCRIPT>" >> /home/pi/cron.html
 
-#日付パート
-echo `date` >> /home/pi/cron.html
-
 #ページリンクパート
 echo "<a href=\"amazonlist.html\">[ama]</a><span style=\"color:orange;\">[cron]</span><a href=\"auctionlist.html\">[meru]</a><a href=\"ya.html\">[yauc]</a><a href=\"timer.html\">[timer]</a><a href=\"phpbutton.html\">[button]</a>" >> /home/pi/cron.html
+
+#日付パート
+echo `date` >> /home/pi/cron.html
 
 #アフィパート
 echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>
