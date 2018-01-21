@@ -2,6 +2,11 @@
 
 A=/var/www/html/weight.png
 B=/home/pi/share/統計記録.xls
-if [ $A -ot $B ]; then
-	python /home/pi/weight.py
+CMD=/home/pi/weight.py
+if [ $A -e ]; then
+	if [ $A -ot $B ]; then
+		python $C
+	fi
+else
+	python $C
 fi
