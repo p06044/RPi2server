@@ -5,8 +5,8 @@ B=/home/pi/share/統計記録.xls
 CMD=/home/pi/weight.py
 if [ $A -e ]; then
 	if [ $A -ot $B ]; then
-		python $C
+		python $CMD
 	fi
 else
-	python $C
+	python $CMD
 fi
