@@ -14,12 +14,12 @@ echo "<html>
 echo "<span style=\"color:orange;\">[ama]</span><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[meru]</a><a href=\"ya.html\">[yauc]</a><a href=\"timer.html\">[timer]</a><a href=\"phpbutton.html\">[button]</a>" >> /home/pi/amazonlist.html
 RET='\
 '
-
-#日付パート
-echo `date` >> /home/pi/amazonlist.html
-
 #アマゾンほしいものリンク
 echo "<a href=\"https://www.amazon.co.jp/gp/registry/wishlist/AIL114CMM7OU/ref=nav_wishlist_lists_4\" target=\"_blank\">ほしい物リスト</a>" >> /home/pi/amazonlist.html
+
+echo "<br/>" >> /home/pi/amazonlist.html
+#日付パート
+echo `date` >> /home/pi/amazonlist.html
 
 #アフィパート
 echo "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>

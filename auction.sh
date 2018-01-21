@@ -15,6 +15,7 @@ echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><span
 RET='\
 '
 
+echo "<br/>" >> /home/pi/auctionlist.html
 #日付パート
 echo `date` >> /home/pi/auctionlist.html
 
