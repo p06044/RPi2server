@@ -11,7 +11,7 @@ echo "<html>
     </SCRIPT>" >> /home/pi/ya.html
 
 #ページリンクパート
-echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[meru]</a><span style=\"color:orange;\">[yauc]</span><a href=\"timer.html\">[timer]</a><a href=\"phpbutton.html\">[button]</a>" >> /home/pi/ya.html
+echo "<a href=\"amazonlist.html\">[ama]</a><a href=\"cron.html\">[cron]</a><a href=\"auctionlist.html\">[meru]</a><span style=\"color:orange;\">[yauc]</span><a href=\"timer.html\">[timer]</a><a href=\"phpbutton.html\">[button]</a><a href=\"tumblr.html\">[tumblr]</a>" >> /home/pi/ya.html
 RET='\
 '
 
