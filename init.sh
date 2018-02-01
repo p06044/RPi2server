@@ -1,4 +1,5 @@
 #!/bin/bash
+cd git
 git init &
 wait $!
 git remote add origin https://github.com/p06044/RPi2server.git &
