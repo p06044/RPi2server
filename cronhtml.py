@@ -2,6 +2,8 @@
 #coding:utf-8
 import datetime
 import commands
+import link
+import afi
 
 print "Content-type: text/html\n"
 print "<html>"
@@ -12,22 +14,14 @@ print "</head>"
 print "<body>"
 
 #page link
-print "<a href=\"amazonlist.html\">[ama]</a><span style=\"color:orange;\">[cron]</span><a href=\"auctionlist.html\">[meru]</a><a href=\"ya.html\">[yauc]</a><a href=\"timer.html\">[timer]</a><a href=\"phpbutton.html\">[button]</a><a href=\"tumblr.html\">[tumblr]</a>"
+link.links('cron')
 
 #date
 date = datetime.date.today()
 print date 
 
 #afi
-print "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>"
-print "<!-- ふゎーおすまほ -->"
-print "<ins class=\"adsbygoogle\""
-print "     style=\"display:inline-block;width:300px;height:250px\""
-print "     data-ad-client=\"ca-pub-8948717586645505\""
-print "     data-ad-slot=\"2135626673\"></ins>"
-print "<script>"
-print "(adsbygoogle = window.adsbygoogle || []).push({});"
-print "</script>"
+afi.afi()
 
 #date countdown
 check = commands.getoutput("bash /home/pi/git/timediff.sh")
