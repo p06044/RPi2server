@@ -38,7 +38,7 @@ samba = commands.getoutput("ls -tl /home/pi/share | tail -n +2 | awk \'{print $6
 print "<div>"+samba+"</div>"
 
 #weight
-print "<div><img src=\"/home/pi/weight.png\" width=\"30%\"></div>"
+print "<div><img src=\"weight.png\" width=\"30%\"></div>"
 
 #CRON
 f = open('crontab.txt')
