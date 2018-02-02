@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding: utf-8
-print "Content-type: text/html\n";
+print "Content-type: text/html\n"
 print "<HTML>"
 print "<head>"
 print "<meta charset=\"UTF-8\" >"
@@ -31,7 +31,5 @@ print "     data-ad-slot=\"2135626673\"></ins>"
 print "<script>"
 print "(adsbygoogle = window.adsbygoogle || []).push({});"
 print "</script>"
-print ""
 print "</body>"
-print ""
 print "</HTML>"
