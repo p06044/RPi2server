@@ -4,6 +4,7 @@ import datetime
 import commands
 import link
 import afi
+import ls
 
 print "Content-type: text/html\n"
 print "<html>"
@@ -28,8 +29,9 @@ check = commands.getoutput("bash /home/pi/git/timediff.sh")
 print check 
 
 #samba
-samba = commands.getoutput("ls -tl /home/pi/share | tail -n +2 | awk \'{print $6,$7,$8,$9}\'")
-print "<div>"+samba+"</div>"
+#samba = commands.getoutput("ls -tl /home/pi/share | tail -n +2 | awk \'{print $6,$7,$8,$9}\'")
+#print "<div>"+samba+"</div>"
+ls.main()
 
 #weight
 print "<div><img src=\"weight.png\" width=\"30%\"></div>"
