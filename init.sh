@@ -24,8 +24,8 @@ do
         fi
 done
 
-cp index.html /var/www/html/
-cp phpbutton.* /var/www/html/
-cp timer.html /var/www/html/
-cp tumblr.html /var/www/html/
+#cp index.html /var/www/html/
+#cp phpbutton.* /var/www/html/
+#cp timer.html /var/www/html/
+#cp tumblr.html /var/www/html/
 crontab crontab.txt 
