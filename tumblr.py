@@ -2,6 +2,7 @@
 #coding: utf-8
 import link
 import afi
+import urlencode
 
 print "Content-type: text/html\n"
 print "<HTML>"
@@ -16,13 +17,16 @@ print "<br/>"
 f = open('tumblrS.txt')
 areas = f.read().splitlines()
 for line in areas:
-	print "<a href=\"http://sortme.tumblr.com/tagged/"+line.split()[0]+"\" target=\"_blank\">"+line.split()[1]+"</a>"
+	word = urlencode.main(line)
+	print "<a href=\""+line+"\" target=\"_blank\">"+word+"</a>"
 f.close()
-
+print "<br/>"
+print "<br/>"
 f = open('tumblrG.txt')
 areas = f.read().splitlines()
 for line in areas:
-	print "<a href=\"http://gravua.tumblr.com/tagged/"+line.split()[0]+"\" target=\"_blank\">"+line.split()[1]+"</a>"
+	word = urlencode.main(line)
+	print "<a href=\""+line+"\" target=\"_blank\">"+word+"</a>"
 f.close()
 
 afi.afi()
