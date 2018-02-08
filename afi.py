@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding: utf-8
-def afi():
+def main():
 	print "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script>"
 	print "<!-- ふゎーおすまほ -->"
 	print "<ins class=\"adsbygoogle\""
@@ -11,3 +11,5 @@ def afi():
 	print "(adsbygoogle = window.adsbygoogle || []).push({});"
 	print "</script>"
 
+if __name__ == '__main__':
+	main()

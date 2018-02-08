@@ -14,21 +14,13 @@ print "<body>"
 link.links('tumblr')
 print "<br/>"
 
-f = open('tumblrS.txt')
-areas = f.read().splitlines()
-for line in areas:
-	word = urlencode.main(line)
-	print "<a href=\""+line+"\" target=\"_blank\">"+word+"</a>"
-f.close()
-print "<br/>"
-print "<br/>"
-f = open('tumblrG.txt')
+f = open('tumblr.txt')
 areas = f.read().splitlines()
 for line in areas:
 	word = urlencode.main(line)
 	print "<a href=\""+line+"\" target=\"_blank\">"+word+"</a>"
 f.close()
 
-afi.afi()
+afi.main()
 print "</body>"
 print "</HTML>"

@@ -5,14 +5,9 @@ import commands
 import link
 import afi
 import ls
+import head
 
-print "Content-type: text/html\n"
-print "<html>"
-print "<head>"
-print "    <meta charset=\"UTF-8\">"
-print "    <title>schedule</title>"
-print "</head>"
-print "<body>"
+head.head()
 
 #page link
 link.links('cron')
@@ -22,7 +17,7 @@ date = datetime.date.today()
 print date 
 
 #afi
-afi.afi()
+afi.main()
 
 #date countdown
 check = commands.getoutput("bash /home/pi/git/timediff.sh")
@@ -42,5 +37,4 @@ areas = f.read().splitlines()
 for line in areas:
 	print "<div>"+line+"</div>"
 
-print "</body>"
-print "</html>"
+head.end()
