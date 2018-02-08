@@ -7,10 +7,10 @@ import afi
 import ls
 import head
 
-head.head()
+head.main()
 
 #page link
-link.links('cron')
+link.main('cron')
 
 #date
 date = datetime.date.today()
