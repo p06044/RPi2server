@@ -11,7 +11,7 @@ print "<meta charset=\"UTF-8\" >"
 print "<title>tumblr tag</title>"
 print "</head>"
 print "<body>"
-link.links('tumblr')
+link.main('tumblr')
 print "<br/>"
 
 f = open('tumblr.txt')
