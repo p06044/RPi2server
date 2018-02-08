@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding: utf-8
-link = [['ama', 'amazonlist.html'], ['cron', 'cronhtml.py'], ['meru', 'auctionlist.html'], ['yauc', 'ya.html'], ['timer', 'timer.html'], ['button', 'phpbutton.html'], ['tumblr', 'tumblr.py']]
+link = [['ama', 'amazonlist.html'], ['cron', 'cronhtml.py'], ['meru', 'auctionlist.html'], ['yauc', 'ya2.py'], ['timer', 'timer.html'], ['button', 'phpbutton.html'], ['tumblr', 'tumblr.py']]
 
 def links(this):
 	for a in range(len(link)):
