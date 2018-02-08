@@ -36,6 +36,6 @@ for tag in soup.find_all("h3"):
 for line in range(len(link)):
 #	print('%s, %s' % (link[line], price[line]))
 	print('%s' % link[line])
-	print('%s" % price[line])
+	print('%s' % price[line])
 
 head.end()
