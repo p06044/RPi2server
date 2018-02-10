@@ -6,6 +6,7 @@ import link
 import afi
 import ls
 import head
+#import clist
 
 head.main()
 
@@ -32,6 +33,7 @@ ls.main()
 print "<div><img src=\"weight.png\" width=\"30%\"></div>"
 
 #CRON
+#clist.main()
 f = open('crontab.txt')
 areas = f.read().splitlines()
 for line in areas:
