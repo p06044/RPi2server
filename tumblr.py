@@ -3,14 +3,9 @@
 import link
 import afi
 import urlencode
+import head
 
-print "Content-type: text/html\n"
-print "<HTML>"
-print "<head>"
-print "<meta charset=\"UTF-8\" >"
-print "<title>tumblr tag</title>"
-print "</head>"
-print "<body>"
+head.main()
 link.main('tumblr')
 print "<br/>"
 
@@ -22,5 +17,4 @@ for line in areas:
 f.close()
 
 afi.main()
-print "</body>"
-print "</HTML>"
+head.end()
