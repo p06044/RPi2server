@@ -14,12 +14,12 @@ def afi():
 	print "(adsbygoogle = window.adsbygoogle || []).push({});"
 	print "</script>"
 
-def head():
+def head(title):
 	print "Content-type: text/html\n"
 	print "<html>"
 	print "<head>"
 	print "    <meta charset=\"UTF-8\">"
-	print "    <title>schedule</title>"
+	print "    <title>"+title+"</title>"
 	print "</head>"
 	print "<body>"
 

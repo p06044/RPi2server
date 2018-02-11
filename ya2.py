@@ -5,7 +5,7 @@ import commands
 import cgifunc
 from bs4 import BeautifulSoup
 
-cgifunc.head()
+cgifunc.head('yafuoku')
 cgifunc.link('ya')
 date = datetime.date.today()
 print date 

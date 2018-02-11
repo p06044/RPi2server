@@ -2,7 +2,7 @@
 #coding: utf-8
 import cgifunc
 
-cgifunc.head()
+cgifunc.head('tumblr')
 cgifunc.link('tumblr')
 print "<br/>"
 

@@ -4,7 +4,7 @@ import datetime
 import commands
 import cgifunc
 
-cgifunc.head()
+cgifunc.head('cron')
 
 #page link
 cgifunc.link('cron')
