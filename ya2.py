@@ -1,22 +1,19 @@
 #!/usr/bin/python
 #coding:utf-8
-import requests
 import datetime
 import commands
-import link
-import afi
-import head
+import cgifunc
 from bs4 import BeautifulSoup
 
-head.main()
-link.main('ya')
+cgifunc.head()
+cgifunc.link('ya')
 date = datetime.date.today()
 print date 
-afi.main()
+cgifunc.afi()
 print "<br/>"
 
 f = open('/home/pi/gittxt/yahtml.txt')
 areas = f.read().splitlines()
 for line in areas:
 	print line
-head.end()
+cgifunc.end()
