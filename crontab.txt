@@ -1,8 +1,8 @@
 3 * * * * /usr/bin/fetchmail -f $HOME/.fetchmailrc >/dev/null 2>&1
 #0 17 * * 2 bash $HOME/git/toeic.sh >/dev/null 2>&1
 0 17 * * 2 python $HOME/git/gethtml.py https://www.iibc-global.org/toeic/test/lr/about/pr.html /home/git/share/toeic.html >/dev/null 2>&1
-0 * * * * python $HOME/git/gethtml.py https://auctions.yahoo.co.jp/search/search?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86 /home/pi/ya2.html >/dev/null 2>&1
-0 0 * * * python $HOME/git/gethtml.py https://www.amazon.co.jp/gp/registry/wishlist/AIL114CMM7OU /home/pi/amazon.html >/dev/null 2>&1
+0 * * * * python $HOME/git/gethtml.py https://auctions.yahoo.co.jp/search/search?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86 /home/pi/gittxt/ya2.html >/dev/null 2>&1
+0 0 * * * python $HOME/git/gethtml.py https://www.amazon.co.jp/gp/registry/wishlist/AIL114CMM7OU /home/pi/gittxt/amazon.html >/dev/null 2>&1
 
 
 #0 * * * * bash $HOME/git/amazon.sh >/dev/null 2>&1

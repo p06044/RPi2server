@@ -24,6 +24,8 @@ do
         fi
 done
 
+mkdir /home/pi/gittxt
+mv index.html /home/pi/gittxt/
 #cp index.html /var/www/html/
 #cp phpbutton.* /var/www/html/
 #cp timer.html /var/www/html/
