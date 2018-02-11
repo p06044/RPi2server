@@ -1,6 +1,5 @@
 #!/usr/bin/python
 #coding: utf-8
-import urlencode
 import cgifunc
 
 cgifunc.head()
