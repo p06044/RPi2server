@@ -2,22 +2,19 @@
 #coding:utf-8
 import datetime
 import commands
-import link
-import afi
-import ls
-import head
+import cgifunc
 
-head.main()
+cgifunc.head()
 
 #page link
-link.main('cron')
+cgifunc.link('cron')
 
 #date
 date = datetime.date.today()
 print date 
 
 #afi
-afi.main()
+cgifunc.afi()
 
 #date countdown
 check = commands.getoutput("bash /home/pi/git/timediff.sh")
@@ -26,7 +23,7 @@ print check
 #samba
 #samba = commands.getoutput("ls -tl /home/pi/share | tail -n +2 | awk \'{print $6,$7,$8,$9}\'")
 #print "<div>"+samba+"</div>"
-ls.main()
+cgifunc.ls()
 
 #weight
 print "<div><img src=\"weight.png\" width=\"30%\"></div>"
@@ -37,4 +34,4 @@ areas = f.read().splitlines()
 for line in areas:
 	print "<div>"+line+"</div>"
 
-head.end()
+cgifunc.end()

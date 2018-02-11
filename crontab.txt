@@ -3,8 +3,7 @@
 0 17 * * 2 python $HOME/git/gethtml.py https://www.iibc-global.org/toeic/test/lr/about/pr.html /home/git/share/toeic.html >/dev/null 2>&1
 0 * * * * python $HOME/git/gethtml.py https://auctions.yahoo.co.jp/search/search?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86 /home/pi/gittxt/ya2.html >/dev/null 2>&1
 0 0 * * * python $HOME/git/gethtml.py https://www.amazon.co.jp/gp/registry/wishlist/AIL114CMM7OU /home/pi/gittxt/amazon.html >/dev/null 2>&1
-
-
+0 0 * * * python $HOME/git/gethtml.py https://www.mercari.com/jp/search/?sort_order=&keyword=kals+%E8%A6%81%E9%A0%85%E9%9B%86&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&status_on_sale=1 /home/pi/gittxt/mercari.html >/dev/null 2>&1
 #0 * * * * bash $HOME/git/amazon.sh >/dev/null 2>&1
 #0 * * * * bash $HOME/git/auction.sh >/dev/null 2>&1
 0 * * * * python $HOME/git/yahtml.py >/dev/null 2>&1

@@ -21,7 +21,7 @@ def main():
 		a = tag.find('a')
 		link.append(a)
 
-	f = open('/home/pi/yahtml.txt', 'w')
+	f = open('/home/pi/gittxt/yahtml.txt', 'w')
 	for line in range(len(link)):
 		f.write('%s <span style=\"color:orange;\">%s</span><br/>' % (link[line].encode('utf-8'), price[line].encode('utf-8')))
 	f.close()

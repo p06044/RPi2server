@@ -15,7 +15,7 @@ print date
 afi.main()
 print "<br/>"
 
-f = open('/home/pi/yahtml.txt')
+f = open('/home/pi/gittxt/yahtml.txt')
 areas = f.read().splitlines()
 for line in areas:
 	print line

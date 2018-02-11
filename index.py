@@ -1,11 +1,9 @@
 #!/usr/bin/python
 #coding:utf-8
-import afi
-import head
-import link
+import cgifunc
 
 #head
-head.main()
+cgifunc.head()
 #apache
 f = open('/home/pi/gittxt/index.html')
 areas = f.read().splitlines()
@@ -14,8 +12,8 @@ for line in areas:
 f.close()
 
 #afi
-afi.main()
+cgifunc.afi()
 #link
-link.main('index')
+cgifunc.link('index')
 #end
-head.end()
+cgifunc.end()
