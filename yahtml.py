@@ -1,14 +1,12 @@
 #!/usr/bin/python
 #coding:utf-8
 import requests
-import commands
 from bs4 import BeautifulSoup
 
 def main():
 	url = "https://auctions.yahoo.co.jp/search/search?p=kals+%E8%A6%81%E9%A0%85%E9%9B%86"
 	html = requests.get(url)
 	soup = BeautifulSoup(html.text, "html5lib")
-	#soup = BeautifulSoup(open('/home/pi/ya2.html'), "html5lib")
 
 	price = []
 	for tag in soup.find_all(class_="pr1"):

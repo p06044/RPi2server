@@ -3,7 +3,7 @@
 import cgifunc
 
 #head
-cgifunc.head()
+cgifunc.head('apache2')
 #apache
 f = open('/home/pi/gittxt/index.html')
 areas = f.read().splitlines()

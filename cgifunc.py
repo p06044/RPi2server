@@ -28,7 +28,7 @@ def end():
 	print "</html>"
 
 def link(this):
-	link = [['ama', 'amazonlist.html'], 
+	link = [['amazon', 'amazon.py'], 
 	['cron', 'cronhtml.py'], 
 	['meru', 'auctionlist.html'], 
 	['yauc', 'ya2.py'], 
