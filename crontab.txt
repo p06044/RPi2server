@@ -13,4 +13,4 @@
 0 19 * * 4 bash $HOME/git/rec_radiko.sh LFR 110 share バカリズム
 0 10 * * 0 bash $HOME/git/rec_radiko.sh TBS 115 share 安住
 0 19 * * 6 bash $HOME/git/rec_radiko.sh TBS 120 share 宮川賢
-0 13 * * 6 bash $HOME/git/rec_radiko.sh TBS 115 share 久米宏
+#0 13 * * 6 bash $HOME/git/rec_radiko.sh TBS 115 share 久米宏
