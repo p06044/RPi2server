@@ -1,6 +1,6 @@
 3 * * * * /usr/bin/fetchmail -f $HOME/.fetchmailrc >/dev/null 2>&1
 0 17 * * 2 python $HOME/git/toeic.py >/dev/null 2>&1
-0 * * * * python $HOME/git/amazon.py >/dev/null 2>&1
+0 * * * * python $HOME/git/amazonhtml.py >/dev/null 2>&1
 0 * * * * python $HOME/git/yahtml.py >/dev/null 2>&1
 #0 * * * * bash $HOME/git/auction.sh >/dev/null 2>&1
 */3 * * * * python $HOME/git/weight.py >/dev/null 2>&1
