@@ -13,5 +13,6 @@ print "<br/>"
 f = open('/home/pi/gittxt/amazonhtml.txt')
 areas = f.read().splitlines()
 for line in areas:
-	print line
+	rpl = line.replace('/dp', 'https://www.amazon.co.jp/dp')
+	print rpl
 cgifunc.end()
