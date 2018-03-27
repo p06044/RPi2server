@@ -30,7 +30,8 @@ def end():
 def link(this):
 	link = [['amazon', 'amazon.py'], 
 	['cron', 'cronhtml.py'], 
-	['meru', 'auctionlist.html'], 
+#	['meru', 'auctionlist.html'], 
+	['meru', 'auction.py'], 
 	['yauc', 'ya2.py'], 
 	['timer', 'timer.html'], 
 	['button', 'phpbutton.html'], 
@@ -60,9 +61,13 @@ def ls():
 		print('<div>%s %s %s %s</div>' % (word[5], word[6],word[7],word[8]))
 
 def urlencode(url):
-	tag=  url.split("/")
+	tag =  url.split("/")
 	parse = urllib.unquote(tag[4])
 	return parse
+
+def encomeru(url):
+	return urllib.unquote(url.split("/")[5].split("&")[1].split("=")[1])
+
 
 #if __name__ == '__main__':
 #	main()

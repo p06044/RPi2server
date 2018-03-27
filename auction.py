@@ -13,5 +13,5 @@ url = ['https://www.mercari.com/jp/search/?sort_order=price_asc&keyword=KALS%E3%
 
 
 for a in range(len(url)):
-	print "<a href=\""+url[a]+"\">"+cgifunc.encomeru(url[a])+"</a><br/>"
+	print "<a href=\""+url[a]+"\" target=\"_blank\">"+cgifunc.encomeru(url[a])+"</a><br/>"
 cgifunc.end()
