@@ -65,9 +65,31 @@ def urlencode(url):
 	parse = urllib.unquote(tag[4])
 	return parse
 
-def encomeru(url):
-	return urllib.unquote(url.split("/")[5].split("&")[1].split("=")[1])
+def amalink(word):
+	decode = urllib.quote(word)
+	url = 'https://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Daps&field-keywords='+decode
+	link = '<span style=\"color:orange;\">[a]</span><a href=\"'+url+'\" target=\"_blank\">'+word+'</a>'
+	return link
 
+def merulink(word):
+	decode = urllib.quote(word)
+	url = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&status_on_sale=1'
+	link = '<span style=\"color:orange;\">[m]</span><a href=\"'+url+'\" target=\"_blank\">'+word+'</a>'
+	return link
+
+def yaholink(word):
+	decode = urllib.quote(word)
+	url = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
+	link = '<span style=\"color:orange;\">[y]</span><a href=\"'+url+'\" target=\"_blank\">'+word+'</a>'
+	return link
+
+def link3(word):
+	decode = urllib.quote(word)
+	aurl = 'https://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Daps&field-keywords='+decode
+	murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&status_on_sale=1'
+	yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
+	link = word+' <a href=\"'+murl+'\" target=\"_blank\">[m]</a> <a href=\"'+aurl+'\" target=\"_blank\">[a]</a> <a href=\"'+yurl+'\" target=\"_blank\">[y]</a>'
+	return link
 
 #if __name__ == '__main__':
 #	main()
