@@ -14,5 +14,5 @@ word = ['要項集 KALS', 'ライジング古文', 'みんなが欲しかった!
 
 for a in range(len(word)):
 	#print cgifunc.amalink(word[a])+" "+cgifunc.merulink(word[a])+" "+cgifunc.yaholink(word[a])+"<br/>"
-	print cgifunc.link3(word[a])+"<br/>
+	print cgifunc.link3(word[a])+"<br/>"
 cgifunc.end()
