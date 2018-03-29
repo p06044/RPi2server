@@ -70,7 +70,7 @@ def link3(word):
 	aurl = 'https://www.amazon.co.jp/s/url=search-alias%3Daps&field-keywords='+decode
 	murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&status_on_sale=1'
 	yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
-	link = ' <a href=\"'+murl+'\" target=\"_blank\">[m]</a> <a href=\"'+aurl+'\" target=\"_blank\">[a]</a> <a href=\"'+yurl+'\" target=\"_blank\">[y]</a>'+word
+	link = '<div><a href=\"'+murl+'\" target=\"_blank\">[m]</a> <a href=\"'+aurl+'\" target=\"_blank\">[a]</a> <a href=\"'+yurl+'\" target=\"_blank\">[y]</a>'+word+'</div>'
 	return link
 
 #if __name__ == '__main__':

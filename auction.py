@@ -13,6 +13,5 @@ print "<br/>"
 word = ['要項集 KALS', 'ライジング古文', 'みんなが欲しかった! 社労士の問題集 2018']
 
 for a in range(len(word)):
-	#print cgifunc.amalink(word[a])+" "+cgifunc.merulink(word[a])+" "+cgifunc.yaholink(word[a])+"<br/>"
-	print cgifunc.link3(word[a])+"<br/>"
+	print cgifunc.link3(word[a])
 cgifunc.end()
