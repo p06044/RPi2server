@@ -10,8 +10,9 @@ print date
 cgifunc.afi()
 print "<br/>"
 
-word = ['要項集 KALS', 'ライジング古文', 'みんなが欲しかった! 社労士の問題集 2018']
-
-for a in range(len(word)):
-	print cgifunc.link3(word[a])
+f = open('auction.txt')
+areas = f.read().splitlines()
+for a in areas:
+	print cgifunc.link3(a)
+f.close()
 cgifunc.end()
