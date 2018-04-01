@@ -70,7 +70,9 @@ def link3(word):
 	aurl = 'https://www.amazon.co.jp/s/url=search-alias%3Daps&field-keywords='+decode
 	murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&status_on_sale=1'
 	yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
-	link = '<div><a href=\"'+murl+'\" target=\"_blank\">[m]</a> <a href=\"'+aurl+'\" target=\"_blank\">[a]</a> <a href=\"'+yurl+'\" target=\"_blank\">[y]</a>'+word+'</div>'
+	burl = 'http://www.bookoffonline.co.jp/display/L001,st=u,bg=12,q='+decode
+	rurl = 'https://search.rakuten.co.jp/search/event/'+decode+'/200162/?ev=19&evsitem=%E3%80%90%E4%B8%AD%E5%8F%A4%E3%80%91&s=2'
+	link = '<div><a href=\"'+murl+'\" target=\"_blank\">[m]</a> <a href=\"'+aurl+'\" target=\"_blank\">[a]</a> <a href=\"'+yurl+'\" target=\"_blank\">[y]</a> <a href=\"'+burl+'\" target=\"_blank\">[b]</a> <a href=\"'+rurl+'\" target=\"_blank\">[r]</a>'+word+'</div>'
 	return link
 
 #if __name__ == '__main__':
