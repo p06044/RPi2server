@@ -28,13 +28,13 @@ def weight():
 	fig.add_subplot(311)
 	plt.grid()
 	plt.plot(date, weight, "g", label=date[nrows-1])
-	plt.legend()
+	plt.legend(bbox_to_anchor=(0, 1), loc='upper left')
 
 	fig.add_subplot(312)
 	plt.grid()
 	plt.plot(date, high, "r", label="high")
 	plt.plot(date, low, "b", label="low")
-	plt.legend()
+	plt.legend(bbox_to_anchor=(0, 1), loc='upper left')
 
 	ax = fig.add_subplot(313)
 	plt.grid()
@@ -42,7 +42,7 @@ def weight():
 	ax.plot(date, rate, "g", label="rate")
 	fig.autofmt_xdate()
 
-	plt.legend()
+	plt.legend(bbox_to_anchor=(0, 1), loc='upper left')
 	plt.savefig("/home/pi/git/weight.png")
 
 def main():
