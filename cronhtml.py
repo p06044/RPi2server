@@ -26,7 +26,7 @@ print check
 cgifunc.ls()
 
 #weight
-print "<div><img src=\"weight.png\" width=\"30%\"></div>"
+print "<div><img src=\"weight.png\" width=\"50%\"></div>"
 
 #CRON
 f = open('crontab.txt')
