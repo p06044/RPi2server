@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def main():
-	url = "https://auctions.yahoo.co.jp/search/search?p=%E7%A4%BE%E4%BC%9A%E7%A6%8F%E7%A5%89%E5%A3%AB+%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%96%E3%83%83%E3%82%AF+2018"
+	url = "https://auctions.yahoo.co.jp/search/search?p=%E8%A9%B3%E8%A7%A3+%E7%A4%BE%E4%BC%9A%E7%A6%8F%E7%A5%89%E5%A3%AB+%E9%81%8E%E5%8E%BB+%E5%95%8F%E9%A1%8C%E9%9B%86+18%E5%B9%B4"
 	html = requests.get(url)
 	soup = BeautifulSoup(html.text, "html5lib")
 
