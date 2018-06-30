@@ -23,20 +23,24 @@ def weight():
 	low = data[:,3]
 	rate = data[:,4]
 
-	fig = plt.figure()
-	
-	fig.add_subplot(311)
+	fig = plt.figure(figsize=(8, 10))
+
+	fig.add_subplot(411)
 	plt.grid()
 	plt.plot(date, weight, "g", label=date[nrows-1])
 	plt.legend(bbox_to_anchor=(0, 1), loc='upper left')
 
-	fig.add_subplot(312)
+	fig.add_subplot(412)
 	plt.grid()
 	plt.plot(date, high, "r", label="high")
+	plt.legend(bbox_to_anchor=(0, 1), loc='upper left')
+
+	fig.add_subplot(413)
+	plt.grid()
 	plt.plot(date, low, "b", label="low")
 	plt.legend(bbox_to_anchor=(0, 1), loc='upper left')
 
-	ax = fig.add_subplot(313)
+	ax = fig.add_subplot(414)
 	plt.grid()
 	#plt.xticks(rotation =12)
 	ax.plot(date, rate, "g", label="rate")
