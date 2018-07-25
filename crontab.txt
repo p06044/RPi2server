@@ -6,7 +6,7 @@
 #RADIO
 0 1 * * 4 bash $HOME/git/rec_radiko.sh TBS 120 share JUNK
 0 22 * * 1-5 bash $HOME/git/rec_radiko.sh TBS 115 share 荻上チキ
-0 13 * * 2,4 bash $HOME/git/rec_radiko.sh TBS 150 share たまむすび
+0 13 * * 2,3,4 bash $HOME/git/rec_radiko.sh TBS 150 share たまむすび
 0 0 * * 5 bash $HOME/git/rec_radiko.sh TBS 60 share ハライチ
 0 1 * * 0 bash $HOME/git/rec_radiko.sh LFR 120 share オードリー
 0 10 * * 0 bash $HOME/git/rec_radiko.sh TBS 115 share 安住
