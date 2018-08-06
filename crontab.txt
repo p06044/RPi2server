@@ -11,4 +11,4 @@
 #0 1 * * 0 bash $HOME/git/rec_radiko.sh LFR 120 share オードリー
 #0 10 * * 0 bash $HOME/git/rec_radiko.sh TBS 115 share 安住
 #0 19 * * 6 bash $HOME/git/rec_radiko.sh TBS 120 share 宮川賢
-5 8 * 8 1-5 bash $HOME/git/rec_nhk.sh NHK1 225 /home/pi/share 子供科学電話相談
+5 8 23-31 8 1-5 bash $HOME/git/rec_nhk.sh NHK1 225 /home/pi/share 子供科学電話相談
