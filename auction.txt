@@ -1,6 +1,6 @@
-xperia z1
-xperia z2
-xperia a2
+xperia z1 -JUNK -ジャンク -訳あり
+xperia z2 -JUNK -ジャンク -訳あり
+xperia a2 -JUNK -ジャンク -訳あり
 登録販売者
 電験三種
 入試用重大ニュース
