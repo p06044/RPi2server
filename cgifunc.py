@@ -23,6 +23,32 @@ def head(title):
 	print "</head>"
 	print "<body>"
 
+def head(title):
+	print "Content-type: text/html\n"
+	print "<html>"
+	print "<head>"
+	print "    <meta charset=\"UTF-8\">"
+	print "    <title>"+title+"</title>"
+        print "    <style>"
+        print "         .btn-square-shadow {"
+	print "	  display: inline-block;"
+	print "	  padding: 0.5em 1em;"
+	print "	  text-decoration: none;"
+	print "	  background: #668ad8;/*ボタン色*/"
+	print "	  color: #FFF;"
+	print "	  border-bottom: solid 4px #627295;"
+	print "	  border-radius: 3px;"
+	print "	}"
+	print "	.btn-square-shadow:active {"
+	print "	  -webkit-transform: translateY(4px);"
+	print "	  transform: translateY(4px);/*下に動く*/"
+	print "	  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/"
+	print "	  border-bottom: none;"
+	print "	}"
+	print " </style>"
+	print "</head>"
+	print "<body>"
+
 def end():
 	print "</body>"
 	print "</html>"
@@ -73,7 +99,8 @@ def link3(word):
 	yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
 	burl = 'http://www.bookoffonline.co.jp/display/L001,st=u,bg=12,q='+decode
 	rurl = 'https://search.rakuten.co.jp/search/event/'+decode+'/200162/?ev=19&evsitem=%E3%80%90%E4%B8%AD%E5%8F%A4%E3%80%91&s=2'
-	link = '<div><a href=\"'+murl+'\" target=\"_blank\">[m]</a> <a href=\"'+aurl+'\" target=\"_blank\">[a]</a> <a href=\"'+yurl+'\" target=\"_blank\">[y]</a> <a href=\"'+burl+'\" target=\"_blank\">[b]</a> <a href=\"'+rurl+'\" target=\"_blank\">[r]</a>'+word+'</div>'
+	link = '<div><a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> <a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> <a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a>'+word+'</div>'
+        #	link = '<div><a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> <a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> <a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a> <a href=\"'+burl+'\" class=\"btn-square-shadow\" target=\"_blank\">book</a> <a href=\"'+rurl+'\" class=\"btn-square-shadow\" target=\"_blank\">raku</a>'+word+'</div>'
 	return link
 
 #if __name__ == '__main__':
