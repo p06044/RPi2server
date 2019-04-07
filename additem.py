@@ -8,10 +8,8 @@ import cgifunc
 
 #sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 #sys.stdout = codecs.getwriter("utf-8")(sys.stdout)
-cgifunc.head('application')
+cgifunc.head('add')
 print "<meta http-equiv=\"refresh\" content=\"0;URL=http://p06044.server-on.net/auction.py\">"
-#<!DOCTYPE html>
-#<html lang="ja">
 form = cgi.FieldStorage()
 name = form["name"].value
 #name = form.getvalue("name")

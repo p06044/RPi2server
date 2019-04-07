@@ -23,7 +23,7 @@ def head(title):
         print "<meta http-equiv=\"content-type\" charset=\"utf-8\">"
 	print "    <title>"+title+"</title>"
         print "    <style>"
-        print "         .btn-square-shadow {"
+        print "   .btn-square-shadow {"
 	print "	  display: inline-block;"
 	print "	  padding: 0.5em 1em;"
 	print "	  text-decoration: none;"
@@ -58,9 +58,9 @@ def link(this):
 
 	for a in range(len(link)):
 		if link[a][0] == this:
-			print "<span style=\"color:orange;\">["+link[a][0]+"]</span>"
+			print "<span style=\"color:orange;\" class=\"btn-square-shadow\">"+link[a][0]+"</span>"
 		else:
-			print "<a href="+link[a][1]+">["+link[a][0]+"]</a>"
+			print "<a href="+link[a][1]+" class=\"btn-square-shadow\">"+link[a][0]+"</a>"
 
 def res_cmd_lfeed(cmd):
 	return subprocess.Popen(
@@ -93,7 +93,6 @@ def link3(word):
 	burl = 'http://www.bookoffonline.co.jp/display/L001,st=u,bg=12,q='+decode
 	rurl = 'https://search.rakuten.co.jp/search/event/'+decode+'/200162/?ev=19&evsitem=%E3%80%90%E4%B8%AD%E5%8F%A4%E3%80%91&s=2'
 	link = '<div><a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> <a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> <a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a>'+word+'</div>'
-        #	link = '<div><a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> <a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> <a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a> <a href=\"'+burl+'\" class=\"btn-square-shadow\" target=\"_blank\">book</a> <a href=\"'+rurl+'\" class=\"btn-square-shadow\" target=\"_blank\">raku</a>'+word+'</div>'
 	return link
 
 #if __name__ == '__main__':
