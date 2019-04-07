@@ -28,7 +28,7 @@ def selectbycount(num):
         charset = 'utf8'
         )
     cur = conn.cursor()
-    sql = "select * from auction.item order by id limit 1 offset "+str(int(num))+";"
+    sql = "select * from auction.item order by id desc limit 1 offset "+str(int(num))+";"
     cur.execute(sql)
     rows = cur.fetchall()
     id = rows[0][0]
