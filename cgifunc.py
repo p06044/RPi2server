@@ -49,11 +49,10 @@ def end():
 def link(this):
 	link = [['amazon', 'amazon.py'], 
 	['cron', 'cronhtml.py'], 
-#	['meru', 'auctionlist.html'], 
 	['meru', 'auction.py'], 
 	['yauc', 'ya2.py'], 
 	['timer', 'timer.html'], 
-	['button', 'phpbutton.html'], 
+	['memopad', 'memopad.py'], 
 	['tumblr', 'tumblr.py']]
 
 	for a in range(len(link)):
@@ -86,7 +85,6 @@ def urlencode(url):
 
 def link3(word):
 	decode = urllib.quote(word)
-#	aurl = 'https://www.amazon.co.jp/s/url=search-alias%3Daps&field-keywords='+decode
 	aurl = 'https://www.amazon.co.jp/s?k='+decode
 	murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
 	yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
