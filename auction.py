@@ -22,8 +22,9 @@ print "</form>"
 #	print cgifunc.link3(a)
 #f.close()
 
-print "<form action=\"deletebutton.py\" method=\"get\">"
-for i in range(0, sqlfunc.recordcount()):
-    print sqlfunc.link4(i)
-print "</form>"
+#print "<form action=\"deletebutton.py\" method=\"get\">"
+#for i in range(0, sqlfunc.recordcount()):
+#    print sqlfunc.link4(i)
+#print "</form>"
+sqlfunc.link4for()
 cgifunc.end()

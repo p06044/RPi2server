@@ -95,6 +95,12 @@ def link4(num):
     mlink = '<a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> '
     alink = '<a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> '
     ylink = '<a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a> '
-    button = '<button type=\"submit\" class=\"btn-square-shadow\" name=\"btn\" value=\"'+id+'\">del'+id+'</button>'+name+'<br/>'
+    button = name+'<button type=\"submit\" class=\"btn-square-shadow\" name=\"btn\" value=\"'+id+'\">del'+id+'</button><br/>'
     link = '<div>'+mlink+alink+ylink+button+'</div>'
     return link
+
+def link4for():
+    print "<form action=\"deletebutton.py\" method=\"get\">"
+    for i in range(0, recordcount()):
+        print link4(i)
+    print "</form>"
