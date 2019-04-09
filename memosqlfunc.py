@@ -93,7 +93,7 @@ def link4(num):
     return link
 
 def link4for():
-    print "<form action=\"memodelbutton.py\" method=\"get\">"
+    print "<form action=\"memodelbutton.py\" method=\"get\" onSubmit=\"return check()\">"
     for i in range(0, recordcount()):
         print link4(i)
     print "</form>"

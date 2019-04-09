@@ -12,7 +12,7 @@ cgifunc.afi()
 print "<br/>"
 
 print "<form method=\"POST\" action=\"memoadditem.py\">"
-print "<p>商品名：<input type=\"text\" name=\"name\" id=\"addtext\"><input type=\"submit\" class=\"btn-square-shadow\" value=\"追加\"></p>"
+print "<p>文章：<input type=\"text\" name=\"name\" id=\"addtext\"><input type=\"submit\" class=\"btn-square-shadow\" value=\"追加\"></p>"
 print "<script type=\"text/javascript\">document.getElementById('addtext').focus();</script>"
 print "</form>"
 

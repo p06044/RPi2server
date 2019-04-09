@@ -12,7 +12,7 @@ cgifunc.afi()
 print "<br/>"
 print "<a href=\"http://fuwaao.blogspot.com/search/label/%E3%83%A1%E3%83%AB%E3%82%AB%E3%83%AA%E5%87%BA%E5%93%81%E4%B8%80%E8%A6%A7\" target=\"_blank\" class=\"btn-square-shadow\">出品リスト</a><br/>"
 
-print "<form method=\"POST\" action=\"additem.py\">"
+print "<form method=\"POST\" action=\"additem.py\" onSubmit=\"return check()\">"
 print "<p>商品名：<input type=\"text\" name=\"name\" id=\"addtext\"><input type=\"submit\" class=\"btn-square-shadow\" value=\"追加\"></p>"
 print "<script type=\"text/javascript\">document.getElementById('addtext').focus();</script>"
 print "</form>"
