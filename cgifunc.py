@@ -28,7 +28,7 @@ def head(title):
         print "return true;"
         print "}"
         print "else{"
-        print "window.alert('ドタキャンしました');"
+#        print "window.alert('ドタキャンしました');"
         print "return false;"
         print "}"
         print "}"
