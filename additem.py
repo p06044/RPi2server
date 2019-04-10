@@ -11,7 +11,7 @@ import cgifunc
 cgifunc.head('add')
 print "<meta http-equiv=\"refresh\" content=\"0;URL=http://p06044.server-on.net/auction.py\">"
 form = cgi.FieldStorage()
-name = form["name"].value
+name = form["name"].value.replace('\'', '\'\'')
 #name = form.getvalue("name")
 #name = cgi.escape(str(form.getvalue("name")))
 #name = form.getfirst('name','none')
