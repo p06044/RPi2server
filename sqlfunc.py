@@ -92,11 +92,13 @@ def link4(num):
     aurl = 'https://www.amazon.co.jp/s?k='+decode
     murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
     yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
-    mlink = '<a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> '
-    alink = '<a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> '
-    ylink = '<a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a> '
+    rurl = 'https://fril.jp/search/'+decode+'?order=asc&sort=sell_price'
+    mlink = '<a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">メルカリ</a> '
+    alink = '<a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">アマゾン</a> '
+    ylink = '<a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ヤフオク</a> '
+    rlink = '<a href=\"'+rurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ラクマ</a> '
     button = name+'<button type=\"submit\" class=\"btn-square-shadow\" name=\"btn\" value=\"'+id+'\">del'+id+'</button><br/>'
-    link = '<div>'+mlink+alink+ylink+button+'</div>'
+    link = '<div>'+mlink+rlink+alink+ylink+button+'</div>'
     return link
 
 def link4for():
