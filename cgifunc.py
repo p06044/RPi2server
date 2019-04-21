@@ -34,7 +34,7 @@ def head(title):
         print "}"
         print "// -->"
         print "</script>"
-        print "    <style>"
+        print "<style>"
         print "   .btn-square-shadow {"
 	print "	  display: inline-block;"
 	print "	  padding: 0.5em 1em;"
@@ -50,6 +50,12 @@ def head(title):
 	print "	  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);"
 	print "	  border-bottom: none;"
 	print "	}"
+        print ".visible {"
+        print "visibility: visible;"
+        print "}"
+        print ".not-visible {"
+        print "visibility: hidden;"
+        print "}"
 	print " </style>"
 	print "</head>"
 	print "<body>"
@@ -62,7 +68,7 @@ def link(this):
 	link = [['amazon', 'amazon.py'], 
 	['cron', 'cronhtml.py'], 
 	['meru', 'auction.py'], 
-	['yauc', 'ya2.py'], 
+	['flash', 'flashcard.py'], 
 	['timer', 'timer.html'], 
 	['memopad', 'memopad.py'], 
 	['tumblr', 'tumblr.py']]
