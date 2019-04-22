@@ -101,15 +101,15 @@ def urlencode(url):
 	parse = urllib.unquote(tag[4])
 	return parse
 
-def link3(word):
-	decode = urllib.quote(word)
-	aurl = 'https://www.amazon.co.jp/s?k='+decode
-	murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
-	yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
-	burl = 'http://www.bookoffonline.co.jp/display/L001,st=u,bg=12,q='+decode
-	rurl = 'https://search.rakuten.co.jp/search/event/'+decode+'/200162/?ev=19&evsitem=%E3%80%90%E4%B8%AD%E5%8F%A4%E3%80%91&s=2'
-	link = '<div><a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> <a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> <a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a>'+word+'</div>'
-	return link
+#def link3(word):
+#	decode = urllib.quote(word)
+#	aurl = 'https://www.amazon.co.jp/s?k='+decode
+#	murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
+#	yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
+#	burl = 'http://www.bookoffonline.co.jp/display/L001,st=u,bg=12,q='+decode
+#	rurl = 'https://search.rakuten.co.jp/search/event/'+decode+'/200162/?ev=19&evsitem=%E3%80%90%E4%B8%AD%E5%8F%A4%E3%80%91&s=2'
+#	link = '<div><a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\">meru</a> <a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\">ama</a> <a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\">yah</a>'+word+'</div>'
+#	return link
 
 #if __name__ == '__main__':
 #	main()
