@@ -116,4 +116,4 @@ def link4for():
     for i in range(0, recordcount()):
         print "<form action=\"deletebutton.py\" method=\"get\" onSubmit=\"return check("+link4(i)[0]+")\">"
         print link4(i)[1]
-    print "</form>"
+        print "</form>"
