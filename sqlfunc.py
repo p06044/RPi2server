@@ -108,10 +108,12 @@ def link4(num):
 #    rlink = '<a href=\"'+rurl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src="https://asset.fril.jp/assets/new_web/icon_fril-97af0f192f84d4c9b11a13e51473f60125be6cd4be3e611fb074eb876ffe36a0.png" width="20" alt="TAG index" border="0"></a> '
     button = name+'<button type=\"submit\" class=\"btn-square-shadow\" name=\"btn\" value=\"'+id+'\">del'+id+'</button><br/>'
     link = '<div>'+mlink+rlink+alink+ylink+flink+button+'</div>'
-    return link
+#    return link
+    return id, link
 
 def link4for():
-    print "<form action=\"deletebutton.py\" method=\"get\" onSubmit=\"return check()\">"
+#   print "<form action=\"deletebutton.py\" method=\"get\" onSubmit=\"return check()\">"
     for i in range(0, recordcount()):
-        print link4(i)
+        print "<form action=\"deletebutton.py\" method=\"get\" onSubmit=\"return check("+link4(i)[0]+")\">"
+        print link4(i)[1]
     print "</form>"
