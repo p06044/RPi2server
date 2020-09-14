@@ -92,21 +92,27 @@ def link4(num):
     aurl = 'https://www.amazon.co.jp/s?k='+decode+'&s=price-asc-rank&qid=1555949145&ref=sr_st_price-asc-rank'
     murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
     yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
-    rurl = 'https://search.rakuten.co.jp/search/mall/'+decode+'/'
+    rurl = 'https://search.rakuten.co.jp/search/mall/'+decode+'/?f=2'
     furl = 'https://fril.jp/s?carriage=1&order=asc&query='+decode+'&sort=sell_price&transaction=selling'
+    mourl = 'https://www.mbok.jp/_l?o=1&q='+decode+'&c=80&sf=1'
+#    mourl = 'https://www.mbok.jp/_l?o=1&q='+decode2+'&c=80&sf=1'
+
     aimgurl = 'https://66.media.tumblr.com/d0c8dee7bba07bb889cd3e934b3e3009/tumblr_pq9t9oGQGL1tdfmoeo1_250.png'
     mimgurl = 'https://www-mercari-jp.akamaized.net/assets/img/common/common/mercari_icon.png'
     yimgurl = 'https://66.media.tumblr.com/4487730ff053976c24df278eefdff802/tumblr_pq9timaxBo1tdfmoeo1_400.jpg'
     rimgurl = 'https://66.media.tumblr.com/e7e9a4d5a61ee8c4db9b846ae7bcc203/tumblr_pwz2bcMJ6t1v6viawo1_400.png'
     fimgurl = 'https://66.media.tumblr.com/ac635c15fa7a57836ca3de10291c0a9c/140655e2a483b24a-b3/s400x600/bee90275479a7667708eab95fda2f6d9d2119aaf.jpg'
+    moimgurl = 'https://66.media.tumblr.com/fb02ddc8e3505dcaa06c212bcd5b7f81/3721f5ac44854105-e5/s250x400/b0686869cd0c21b8597300f6433903589e5c24f2.png'
+
     mlink = '<a href=\"'+murl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src='+mimgurl+' width="20" alt="TAG index" border="0"></a> '
     alink = '<a href=\"'+aurl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src='+aimgurl+' width="20" alt="TAG index" border="0"></a> '
     ylink = '<a href=\"'+yurl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src='+yimgurl+' width="20" alt="TAG index" border="0"></a> '
     rlink = '<a href=\"'+rurl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src='+rimgurl+' width="20" alt="TAG index" border="0"></a> '
     flink = '<a href=\"'+furl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src='+fimgurl+' width="20" alt="TAG index" border="0"></a> '
+    molink = '<a href=\"'+mourl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src='+moimgurl+' width="20" alt="TAG index" border="0"></a> '
 #    rlink = '<a href=\"'+rurl+'\" class=\"btn-square-shadow\" target=\"_blank\"><img src="https://asset.fril.jp/assets/new_web/icon_fril-97af0f192f84d4c9b11a13e51473f60125be6cd4be3e611fb074eb876ffe36a0.png" width="20" alt="TAG index" border="0"></a> '
     button = name+'<button type=\"submit\" class=\"btn-square-shadow\" name=\"btn\" value=\"'+id+'\">del'+id+'</button><br/>'
-    link = '<div>'+mlink+rlink+alink+ylink+flink+button+'</div>'
+    link = '<div>'+mlink+rlink+alink+ylink+flink+molink+button+'</div>'
 #    return link
     return id, link
 
