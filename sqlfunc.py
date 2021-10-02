@@ -90,7 +90,9 @@ def link4(num):
     name = selectbycount(num)[1].encode('utf-8')
     decode = urllib.quote(name)
     aurl = 'https://www.amazon.co.jp/s?k='+decode+'&s=price-asc-rank&qid=1555949145&ref=sr_st_price-asc-rank'
-    murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
+    #murl = 'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
+    murl = 'https://jp.mercari.com/search?keyword='+decode+'&order=asc&sort=price&status=on_sale&page=1&status_on_sale=1&shipping_payer_id%5B2%5D=1&price_max=&price_min=&size_group=&brand_id=&brand_name=&category_root=&sort_order=price_asc&shipping_payer_id=2'
+    'https://www.mercari.com/jp/search/?sort_order=price_asc&keyword='+decode+'&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&shipping_payer_id%5B2%5D=1&status_on_sale=1'
     yurl = 'https://auctions.yahoo.co.jp/search/search?p='+decode+'&ei=UTF-8&s1=cbids&o1=a'
     rurl = 'https://search.rakuten.co.jp/search/mall/'+decode+'/?f=2'
     furl = 'https://fril.jp/s?carriage=1&order=asc&query='+decode+'&sort=sell_price&transaction=selling'
